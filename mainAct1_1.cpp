@@ -1,5 +1,7 @@
 #include <iostream>
 
+/* TAMBIEN FALTA LA DE LA SUMA DIRECTA */
+
 
 int sumaIterativa(int n){
     int retValue = 0;
@@ -39,6 +41,9 @@ int main(){
     std::cout << "Suma por Iteracion: " << sumaIterativa(6) << std::endl;
     std::cout << "Suma por Recursion: " << sumaRecursiva(6) << std::endl;
 
+    std::cout << "\n";
+
+    /* std::cout << "Fibonacci por Iteracion: " << *Aqui va la llamada a la iterativa* << std::endl; */
     std::cout << "Fibonacci por Recursion: " << fibonacciRecursivo(9) << std::endl;
 
 
