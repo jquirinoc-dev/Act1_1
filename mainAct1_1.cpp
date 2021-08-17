@@ -1,6 +1,7 @@
 #include <iostream>
 
-/* TAMBIEN FALTA LA DE LA SUMA DIRECTA */
+// Juan Pablo Pérez Durán | A01639947
+// Jonathan Joaquín Quirino Carrasco | A01640100
 
 
 int sumaIterativa(int n){
