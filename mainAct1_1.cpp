@@ -2,6 +2,8 @@
 //Fecha de Creación: agosto 13, 2021  |  Última Fecha de Modificación: agosto XX, 2021
 
 #include <iostream>
+// Juan Pablo Pérez Durán | A01639947
+// Jonathan Joaquín Quirino Carrasco | A01640100
 
 
 int sumaIterativa(int n){
