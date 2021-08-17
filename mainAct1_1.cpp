@@ -23,9 +23,33 @@ int sumaRecursiva(int n){
     }
 }
 
-/* int fibonacciIterativo(int n){
+int sumaDirecta(int n) {
 
-} */
+    int resultado = 0;
+    for (int i = 0; i < n;i++) {
+
+        resultado = resultado + 1 + n;
+
+    }
+    return resultado;
+}
+
+int fibonacciIterativo(int n){
+
+    int resultado;
+    int buffer = 1;
+    int buffer_ = 1;
+    if (n < 3) {
+        resultado = 1;
+    } else {
+        for (int i = 2; i < n; i++) {
+            resultado = buffer + buffer_;
+            buffer_ = buffer;
+            buffer = resultado; 
+        }
+    }
+    return resultado;
+}
 
 int fibonacciRecursivo(int n){
 
@@ -43,8 +67,12 @@ int main(){
 
     std::cout << "\n";
 
-    /* std::cout << "Fibonacci por Iteracion: " << *Aqui va la llamada a la iterativa* << std::endl; */
-    std::cout << "Fibonacci por Recursion: " << fibonacciRecursivo(9) << std::endl;
+    std::cout << "Suma directa: " << sumaDirecta(10) << std::endl;
+
+    std::cout << "\n";
+
+    std::cout << "Fibonacci por Iteración: " << fibonacciIterativo(35) << std::endl;
+    std::cout << "Fibonacci por Recursion: " << fibonacciRecursivo(35) << std::endl;
 
 
     return 0;
