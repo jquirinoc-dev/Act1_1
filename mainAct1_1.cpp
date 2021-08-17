@@ -1,6 +1,7 @@
-#include <iostream>
+//Código por Jonathan Joaquín Quirino Carrasco A01640100 & Juan Pablo Pérez Durán A01639947
+//Fecha de Creación: agosto 13, 2021  |  Última Fecha de Modificación: agosto XX, 2021
 
-/* TAMBIEN FALTA LA DE LA SUMA DIRECTA */
+#include <iostream>
 
 
 int sumaIterativa(int n){
