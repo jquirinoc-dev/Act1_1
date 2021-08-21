@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 // Juan Pablo Pérez Durán | A01639947
 // Jonathan Joaquín Quirino Carrasco | A01640100
@@ -26,12 +27,7 @@ int sumaRecursiva(int n){
 
 int sumaDirecta(int n) {
 
-    int resultado = 0;
-    for (int i = 0; i < n;i++) {
-
-        resultado = resultado + 1 + n;
-
-    }
+    int resultado = (n*(n + 1)) / 2;
     return resultado;
 }
 
@@ -40,24 +36,43 @@ int fibonacciIterativo(int n){
     int resultado;
     int buffer = 1;
     int buffer_ = 1;
+
     if (n < 3) {
+
         resultado = 1;
+
     } else {
-        for (int i = 2; i < n; i++) {
-            resultado = buffer + buffer_;
-            buffer_ = buffer;
-            buffer = resultado; 
+
+        for (int i = 1; i < n + 1; i++) {
+
+            if (i == 1 || i == 2) {
+
+                std::cout << "F(" << i << "): " << 1 << std::endl;       
+
+            } else {
+
+                resultado = buffer + buffer_;
+                std::cout << "F(" << i << "): " << resultado << std::endl; 
+                buffer_ = buffer;
+                buffer = resultado; 
+
+            }
         }
     }
-    return resultado;
+
+    return 1;
+
 }
 
 int fibonacciRecursivo(int n){
 
+    int resultado;
+
     if (n <= 1){
         return n;
-    } else{
-        return fibonacciRecursivo(n-1) + fibonacciRecursivo(n-2);
+    } else {
+        resultado = fibonacciRecursivo(n-1) + fibonacciRecursivo(n-2);
+        return resultado;
     }
 }
 
@@ -65,16 +80,18 @@ int main(){
 
     std::cout << "Suma por Iteracion: " << sumaIterativa(6) << std::endl;
     std::cout << "Suma por Recursion: " << sumaRecursiva(6) << std::endl;
+    std::cout << "Suma directa: " << sumaDirecta(6) << std::endl;
 
     std::cout << "\n";
 
-    std::cout << "Suma directa: " << sumaDirecta(10) << std::endl;
+    std::cout << "Fibonacci por Iteración: " << std::endl;
+    fibonacciIterativo(8);
 
-    std::cout << "\n";
-
-    std::cout << "Fibonacci por Iteración: " << fibonacciIterativo(35) << std::endl;
-    std::cout << "Fibonacci por Recursion: " << fibonacciRecursivo(35) << std::endl;
-
+    std::cout << "Fibonacci por Recursion: " << std::endl;
+    for (int i = 1; i < 9; i++) {
+        std::cout << "F(" << i << "): " << fibonacciRecursivo(i) << std::endl;
+    }
 
     return 0;
+    
 }
