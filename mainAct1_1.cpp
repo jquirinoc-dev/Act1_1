@@ -7,7 +7,7 @@
 #include <vector>
 
 
-
+// GRADO DE COMPLEJIDAD | O(n)
 int sumaIterativa(int n){
     int retValue = 0;
 
@@ -20,6 +20,7 @@ int sumaIterativa(int n){
     return retValue;
 }
 
+// GRADO DE COMPLEJIDAD | O(n)
 int sumaRecursiva(int n){
     if (n <= 0){
         return 0;
@@ -28,12 +29,14 @@ int sumaRecursiva(int n){
     }
 }
 
+// GRADO DE COMPLEJIDAD | O(n^3)
 int sumaDirecta(int n) {
 
     int resultado = (n*(n + 1)) / 2;
     return resultado;
 }
 
+//GRADO DE COMPLEJIDAD | O(n)
 int fibonacciIterativo(int n){
 
     int resultado;
@@ -67,6 +70,7 @@ int fibonacciIterativo(int n){
 
 }
 
+//GRADO DE COMPLEJIDAD | O(2^n)
 int fibonacciRecursivo(int n){
 
     int resultado;
