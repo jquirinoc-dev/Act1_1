@@ -1,7 +1,7 @@
 //Programa que incluye 3 funciones que calculan una sumatoria de 1 a n de forma recursiva, iterativa y directa.
 //También encontramos dos funciones que calculan el n-ésimo número de la serie de Fibonacci de forma recursiva e iterativa.
 //Código por Jonathan Joaquín Quirino Carrasco A01640100 & Juan Pablo Pérez Durán A01639947
-//Fecha de Creación: Agosto 13, 2021  |  Última Fecha de Modificación: agosto XX, 2021
+//Fecha de Creación: Agosto 13, 2021  |  Última Fecha de Modificación: agosto 21, 2021
 
 #include <iostream>
 #include <vector>
